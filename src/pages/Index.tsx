@@ -122,9 +122,9 @@ const Index = () => {
             <MessageCircle className="w-4 h-4" />
             WhatsApp
           </a>
-          <a href="mailto:info@mimobranding.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+          <a href="mailto:supplies@mimobranding.com" className="flex items-center gap-2 hover:text-accent transition-colors">
             <Mail className="w-4 h-4" />
-            info@mimobranding.com
+            supplies@mimobranding.com
           </a>
         </motion.div>
       </main>
