@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import mimoLogo from "@/assets/mimo-logo.png";
 import constructionImg from "@/assets/construction-illustration.png";
-import { Wrench, Clock, Mail, Phone } from "lucide-react";
+import { Wrench, Clock, Mail, Phone, MessageCircle } from "lucide-react";
 
 const FloatingGear = ({ className, delay = 0 }: { className?: string; delay?: number }) => (
   <motion.div
@@ -117,6 +117,10 @@ const Index = () => {
           <a href="tel:0116001100" className="flex items-center gap-2 hover:text-accent transition-colors">
             <Phone className="w-4 h-4" />
             0116001100
+          </a>
+          <a href="https://wa.me/0116001100" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <MessageCircle className="w-4 h-4" />
+            WhatsApp
           </a>
           <a href="mailto:info@mimobranding.com" className="flex items-center gap-2 hover:text-accent transition-colors">
             <Mail className="w-4 h-4" />
