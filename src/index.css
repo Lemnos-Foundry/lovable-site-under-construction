@@ -114,7 +114,7 @@
 
 @keyframes stripe-move {
   0% { background-position: 0 0; }
-  100% { background-position: 40px 0; }
+  100% { background-position: 28.28px 0; }
 }
 
 .animate-float {
@@ -141,5 +141,6 @@
     hsl(var(--navy)) 10px,
     hsl(var(--navy)) 20px
   );
-  animation: stripe-move 1s linear infinite;
+  
+  animation: stripe-move 0.8s linear infinite;
 }
