@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+:root {
+  --primary: #b78e4a;
+  --primary-background: #f4efe6;
+  --secondary: #002a3a;
+  --secondary-background: #f4f5f5;
+  --primary-text-color: #1e1d18;
+  --gray-text-color: #818181;
+}
+
+body {
+  font-family:
+    'Inter',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  color: var(--primary-text-color);
+}
+
+.btn-styling {
+  @apply rounded px-8 py-2.5 text-center text-xs uppercase shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl md:px-8 md:text-sm;
+}
+
+.custom-container {
+  @apply mx-auto w-full max-w-[1440px] px-6 md:px-8 lg:px-12;
+}
+
+.custom-container-left {
+  /* Aligns the left side with custom-container, but lets the right side span full width */
+  margin-left: max(0px, calc((100vw - 1440px) / 2));
+  padding-left: 1.5rem; /* matches px-6 */
+}
+
+@media (min-width: 768px) {
+  .custom-container-left {
+    padding-left: 2rem; /* matches md:px-8 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-container-left {
+    padding-left: 3rem; /* matches lg:px-12 */
+  }
+}

@@ -1,0 +1,26 @@
+# Build artifacts
+dist
+dist-ssr
+coverage
+
+# Dependencies
+node_modules
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Editor directories
+.vscode
+.idea
+
+# OS files
+.DS_Store
+
+# Config files (don't format these)
+package-lock.json
+pnpm-lock.yaml
+bun.lock
